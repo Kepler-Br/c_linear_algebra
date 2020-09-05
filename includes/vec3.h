@@ -9,6 +9,18 @@
 
 typedef cl_float3 t_vec3;
 
+t_vec3 vec3_vec3_sum_val(const t_vec3 a, const t_vec3 b);
+t_vec3 vec3_vec3_sub_val(const t_vec3 a, const t_vec3 b);
+float vec3_vec3_dot_val(const t_vec3 a, const t_vec3 b);
+t_vec3 vec3_vec3_cross_val(const t_vec3 a, const t_vec3 b);
+t_vec3 vec3_normalize_val(const t_vec3 a);
+float vec3_len_val(const t_vec3 a);
+t_vec3 vec3_scalar_mul_val(const t_vec3 a, const float b);
+t_vec3 vec3_scalar_sum_val(const t_vec3 a, const float b);
+t_vec3 vec3_scalar_sub_val(const t_vec3 a, const float b);
+t_vec3 vec3_scalar_div_val(const t_vec3 a, const float b);
+t_vec3 vec3_clamp_val(const t_vec3 a, float start, float end);
+
 t_vec3 vec3_vec3_sum(const t_vec3 * const a, const t_vec3 * const b);
 t_vec3 vec3_vec3_sub(const t_vec3 * const a, const t_vec3 * const b);
 float vec3_vec3_dot(const t_vec3 * const a, const t_vec3 * const b);
