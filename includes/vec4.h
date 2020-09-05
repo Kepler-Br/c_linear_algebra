@@ -14,9 +14,9 @@ t_vec4 vec4_vec4_sub(const t_vec4 * const a, const t_vec4 * const b);
 float vec4_vec4_dot(const t_vec4 * const a, const t_vec4 * const b);
 t_vec4 vec4_normalize(const t_vec4 * const a);
 float vec4_len(const t_vec4 * const a);
-t_vec4 vec4_scalar_mul(const t_vec4 * const a, const float * const b);
-t_vec4 vec4_scalar_sum(const t_vec4 * const a, const float * const b);
-t_vec4 vec4_scalar_sub(const t_vec4 * const a, const float * const b);
-t_vec4 vec4_scalar_div(const t_vec4 * const a, const float * const b);
+t_vec4 vec4_scalar_mul(const t_vec4 * const a, const float b);
+t_vec4 vec4_scalar_sum(const t_vec4 * const a, const float b);
+t_vec4 vec4_scalar_sub(const t_vec4 * const a, const float b);
+t_vec4 vec4_scalar_div(const t_vec4 * const a, const float b);
 
 #endif // VEC4_H
