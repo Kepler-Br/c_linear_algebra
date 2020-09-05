@@ -15,11 +15,12 @@ float vec3_vec3_dot(const t_vec3 * const a, const t_vec3 * const b);
 t_vec3 vec3_vec3_cross(const t_vec3 * const a, const t_vec3 * const b);
 t_vec3 vec3_normalize(const t_vec3 * const a);
 float vec3_len(const t_vec3 * const a);
-t_vec3 vec3_scalar_mul(const t_vec3 * const a, const float * const b);
-t_vec3 vec3_scalar_sum(const t_vec3 * const a, const float * const b);
-t_vec3 vec3_scalar_sub(const t_vec3 * const a, const float * const b);
-t_vec3 vec3_scalar_div(const t_vec3 * const a, const float * const b);
+t_vec3 vec3_scalar_mul(const t_vec3 * const a, const float b);
+t_vec3 vec3_scalar_sum(const t_vec3 * const a, const float b);
+t_vec3 vec3_scalar_sub(const t_vec3 * const a, const float b);
+t_vec3 vec3_scalar_div(const t_vec3 * const a, const float b);
 t_vec3 vec3_clamp(const t_vec3 *const a, float start, float end);
+
 void vec3_clamp_ptr(t_vec3 * const a, float start, float end);
 
 
