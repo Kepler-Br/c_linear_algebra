@@ -42,7 +42,7 @@ float mat4_det(const t_mat4 * const a)
 t_mat4 mat4_inverse(const t_mat4 * const a)
 {
     t_mat4 inv;
-    float det;
+    cl_float det;
     int i;
     inv.s[0] = a->s[5]  * a->s[10] * a->s[15] -
              a->s[5]  * a->s[11] * a->s[14] -
@@ -170,7 +170,7 @@ t_mat4 mat4_inverse(const t_mat4 * const a)
     }
     return (inv);
 }
-t_mat4 mat4_scalar_mul(const t_mat4 * const a, const float * const b)
+t_mat4 mat4_scalar_mul(const t_mat4 * const a, const cl_float * const b)
 {
     static const size_t total_components = 16;
     size_t i;
@@ -185,7 +185,7 @@ t_mat4 mat4_scalar_mul(const t_mat4 * const a, const float * const b)
     return (new_mat);
 }
 
-t_mat4 mat4_scalar_sum(const t_mat4 * const a, const float * const b)
+t_mat4 mat4_scalar_sum(const t_mat4 * const a, const cl_float * const b)
 {
     static const size_t total_components = 16;
     size_t i;
@@ -200,7 +200,7 @@ t_mat4 mat4_scalar_sum(const t_mat4 * const a, const float * const b)
     return (new_mat);
 }
 
-t_mat4 mat4_scalar_sub(const t_mat4 * const a, const float * const b)
+t_mat4 mat4_scalar_sub(const t_mat4 * const a, const cl_float * const b)
 {
     static const size_t total_components = 16;
     size_t i;
@@ -215,7 +215,7 @@ t_mat4 mat4_scalar_sub(const t_mat4 * const a, const float * const b)
     return (new_mat);
 }
 
-t_mat4 mat4_scalar_div(const t_mat4 * const a, const float * const b)
+t_mat4 mat4_scalar_div(const t_mat4 * const a, const cl_float * const b)
 {
     static const size_t total_components = 16;
     size_t i;
